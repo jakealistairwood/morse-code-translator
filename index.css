@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Outfit:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #1f1e25;
+  color: #fff;
+  font-size: 16px;
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.translator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  height: 90vh;
+}
+.translator__input, .translator__output {
+  background-color: #34323f;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  color: #fff;
+  resize: none;
+  width: 60%;
+  height: 20vh;
+}
+.translator__desc {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #e4e5e7;
+}
+.translator__btn {
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(90deg, #f78ca0 0%, #f9748f 19%, #fd868c 60%);
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+.translator__btn:hover {
+  transform: scale(1.02);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #777777;
+  height: 10vh;
+}
+.footer__logo {
+  width: 80px;
+}
+
+/*# sourceMappingURL=index.css.map */

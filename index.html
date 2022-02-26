@@ -4,14 +4,31 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Morse Code Translator</title>
+        <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <div class="translator">
-            <input class="translator__input" type="text" />
+        <main class="translator container">
+            <a class="translator__logo" href="">
+                <img src="./images/logo.svg" alt="translator-logo" />
+            </a>
+            <p class="translator__desc">
+                Please enter some text into the input below to convert a
+                sentence into Morse Code.
+            </p>
+            <textarea
+                class="translator__input"
+                placeholder="Translate to Morse"
+            ></textarea>
             <button class="translator__btn" type="submit">Translate</button>
-            <div class="translator__output"></div>
-        </div>
+            <textarea class="translator__output"></textarea>
+        </main>
+        <footer class="footer container">
+            <a href="" class="footer__logo">
+                <img src="./images/logo.svg" alt="translator-logo" />
+            </a>
+            <div class="footer__copyright">JAKE WOOD | 2022</div>
+        </footer>
         <script src="index.js" type="module"></script>
     </body>
 </html>
