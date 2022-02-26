@@ -32,14 +32,27 @@ body {
 .translator {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 1rem 0;
   height: 90vh;
 }
+.translator__logo {
+  margin-bottom: 1rem;
+}
 @media screen and (max-width: 1280px) {
   .translator__logo {
     width: 200px;
+  }
+}
+.translator__desc {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #d9d9d9;
+  text-align: center;
+}
+@media screen and (max-width: 1280px) {
+  .translator__desc {
+    font-size: 0.8rem;
   }
 }
 .translator__input, .translator__output {
@@ -52,6 +65,7 @@ body {
   resize: none;
   width: 60%;
   height: 20vh;
+  flex: 1;
 }
 .translator__input::placeholder, .translator__output::placeholder {
   font-size: 1rem;
@@ -65,15 +79,13 @@ body {
     font-size: 0.8rem;
   }
 }
-.translator__desc {
-  margin-bottom: 20px;
-  font-size: 1rem;
-  color: #d9d9d9;
-}
-@media screen and (max-width: 1280px) {
-  .translator__desc {
-    font-size: 0.8rem;
+@media screen and (max-width: 500px) {
+  .translator__input, .translator__output {
+    width: 100%;
   }
+}
+.translator__output {
+  margin-bottom: 1rem;
 }
 .translator .translator__btns {
   display: flex;
@@ -108,7 +120,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 0.8rem 0;
   border-top: 1px solid #777777;
   height: 10vh;
 }
